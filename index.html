@@ -36,7 +36,7 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
+        
         header {
             background-color: var(--white);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -97,7 +97,7 @@
             width: 100%;
         }
 
-        /* Hero Section */
+        
         .hero {
             height: 100vh;
             display: flex;
@@ -152,7 +152,7 @@
             color: var(--white);
         }
 
-        /* Section Styles */
+        
         section {
             padding: 100px 0;
         }
@@ -181,7 +181,7 @@
             transform: translateX(-50%);
         }
 
-        /* About Section */
+        
         .about-content {
             display: flex;
             align-items: center;
@@ -211,7 +211,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Skills Section */
+        
         .skills {
             background-color: var(--light-gray);
         }
@@ -261,7 +261,7 @@
             border-bottom: none;
         }
 
-        /* Projects Section */
+        
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -326,7 +326,7 @@
             font-size: 0.9rem;
         }
 
-        /* Contact Section */
+        
         .contact {
             background-color: var(--light-gray);
         }
@@ -408,7 +408,7 @@
             resize: vertical;
         }
 
-        /* Footer */
+        
         footer {
             background-color: var(--black);
             color: var(--white);
@@ -442,7 +442,7 @@
             transform: translateY(-5px);
         }
 
-        /* Responsive Design */
+        
         @media (max-width: 992px) {
             .about-content {
                 flex-direction: column;
@@ -503,7 +503,7 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="container header-container">
             <a href="https://www.linkedin.com/in/mohamedyasin7786" class="logo"
@@ -519,7 +519,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -533,7 +533,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
@@ -550,7 +550,7 @@
             </section>
             </div>
 
-    <!-- Skills Section -->
+    
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-title">
@@ -613,7 +613,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-title">
@@ -674,7 +674,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
@@ -737,7 +737,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer>
         <div class="container">
             <div class="logo" style="color: var(--white);">MOHAMED YASIN<span style="color: #ccc;"></span></div>
@@ -753,7 +753,7 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -768,28 +768,27 @@
             });
         });
 
-        // Form submission handling
+        
         const contactForm = document.getElementById('contactForm');
 
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
 
-                // Get form values
+                
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
 
-                // In a real application, you would send this data to a server
-                // For this demo, we'll just show an alert
+            
                 alert(`Thank you for your message, ${name}! I'll get back to you soon at ${email}.`);
 
-                // Reset the form
+            
                 contactForm.reset();
             });
         }
 
-        // Add animation on scroll
+        
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -804,7 +803,7 @@
             });
         }, observerOptions);
 
-        // Observe sections
+        
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
         });
